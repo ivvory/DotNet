@@ -4,17 +4,14 @@ using System.ComponentModel.Design.Serialization;
 
 namespace Generics
 {
-    public class Node<T>
-    {
-        public T Value { get; set; }
-        public Node<T> Left { get; set; }
-        public Node<T> Right { get; set; }
-        
-
-    }
-
     public class BinaryTree<T>
     {
+        private class Node<T>
+        {
+            public T Value { get; set; }
+            public Node<T> Left { get; set; }
+            public Node<T> Right { get; set; }
+        }
 
         private Node<T> _root;
         private IComparer<T> _comparer;
@@ -90,7 +87,7 @@ namespace Generics
             }
         }
 
-        public IEnumerable<T> NodePostorder(Node<T> root)
+        private IEnumerable<T> NodePostorder(Node<T> root)
         {
             if (root != null)
             {
@@ -106,9 +103,9 @@ namespace Generics
             }
         }
         
-        public BinaryTree(Node<T> root = null)
+        public BinaryTree()
         {
-            this._root = root;
+            this._root = null;
         }
 
         public void Insert(T v)
