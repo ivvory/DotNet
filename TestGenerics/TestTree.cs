@@ -157,4 +157,32 @@ namespace TestGenerics
             }
         }
     }
+    
+    [TestFixture]
+    public class TestIteratorTree
+    {
+        private BinaryTree<int> TestTree = new BinaryTree<int>();
+
+        [TestFixtureSetUp]
+        public void SetUpClass()
+        {
+            int[] values = {1, 2, 3, 2, -1};
+            foreach (var v in values)
+            {
+                this.TestTree.Insert(v);
+            }
+        }
+
+        [Test]
+        public void TestTraversals()
+        {
+            int[] inorderMustBe = {-1, 1, 2, 2, 3};
+            int counter = 0;
+            foreach (var i in TestTree)
+            {
+                Assert.AreEqual(i, inorderMustBe[counter]);
+                counter++;
+            }
+        }
+    }
 }

@@ -1,10 +1,11 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel.Design.Serialization;
 
 namespace Generics
 {
-    public class BinaryTree<T>
+    public class BinaryTree<T> : IEnumerable<T>
     {
         private class Node<T>
         {
@@ -142,5 +143,18 @@ namespace Generics
                 yield return v;
             }
         }
+
+        public IEnumerator<T> GetEnumerator()
+        {
+            foreach (var v in Inorder())
+            {
+                yield return v;
+            }
+        }
+        
+        IEnumerator IEnumerable.GetEnumerator()  
+        {  
+            return GetEnumerator();  
+        }  
     }
 }
