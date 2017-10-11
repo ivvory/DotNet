@@ -51,6 +51,10 @@
       <Project>{AB3C1BA8-981B-4200-9D92-FC9352A478C9}</Project>
       <Name>Generics</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Structures\Structures.csproj">
+      <Project>{6AA7C423-482F-4B8B-B213-692C1A151440}</Project>
+      <Name>Structures</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

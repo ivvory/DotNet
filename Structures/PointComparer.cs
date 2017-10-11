@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Generics
+namespace Structures
 {
     public class PointComparer : IComparer<Point>
     {

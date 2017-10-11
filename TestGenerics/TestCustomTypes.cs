@@ -1,6 +1,6 @@
 ﻿using System;
-using Generics;
 using NUnit.Framework;
+using Structures;
 
 namespace TestGenerics
 {

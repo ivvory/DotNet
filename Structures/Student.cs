@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Generics
+namespace Structures
 {
     public class Student : IComparable<Student>
     {

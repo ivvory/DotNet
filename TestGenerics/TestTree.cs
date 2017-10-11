@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using Generics;
 using NUnit.Framework;
+using Structures;
 
 namespace TestGenerics
 {

@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Generics", "Generics\Generi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestGenerics", "TestGenerics\TestGenerics.csproj", "{7F01F49F-98F7-47DF-A0FA-531D4D51D60E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Structures", "Structures\Structures.csproj", "{6AA7C423-482F-4B8B-B213-692C1A151440}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{7F01F49F-98F7-47DF-A0FA-531D4D51D60E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7F01F49F-98F7-47DF-A0FA-531D4D51D60E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7F01F49F-98F7-47DF-A0FA-531D4D51D60E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6AA7C423-482F-4B8B-B213-692C1A151440}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6AA7C423-482F-4B8B-B213-692C1A151440}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6AA7C423-482F-4B8B-B213-692C1A151440}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6AA7C423-482F-4B8B-B213-692C1A151440}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
