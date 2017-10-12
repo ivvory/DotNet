@@ -124,37 +124,25 @@ namespace Generics
 
         public IEnumerable<T> Preorder()
         {
-            foreach (var v in NodePreorder(this._root))
-            {
-                yield return v;
-            }
+            return NodePreorder(this._root);
         }
         public IEnumerable<T> Inorder()
         {
-            foreach (var v in NodeInorder(this._root))
-            {
-                yield return v;
-            }
+            return NodeInorder(this._root);
         }
         public IEnumerable<T> Postorder()
         {
-            foreach (var v in NodePostorder(this._root))
-            {
-                yield return v;
-            }
+            return NodePostorder(this._root);
         }
 
         public IEnumerator<T> GetEnumerator()
         {
-            foreach (var v in Inorder())
-            {
-                yield return v;
-            }
+            return Inorder().GetEnumerator();
         }
         
         IEnumerator IEnumerable.GetEnumerator()  
         {  
             return GetEnumerator();  
-        }  
+        }
     }
 }

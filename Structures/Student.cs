@@ -23,5 +23,10 @@ namespace Structures
         {
             return this.Mark - other.Mark;
         }
+        
+        public override string ToString()
+        {
+            return $"Student {FirstName} {Surname} completed test {TestName} with mark {Mark} on {Date}";
+        }
     }
 }
