@@ -5,8 +5,10 @@ using System.ComponentModel.Design.Serialization;
 
 namespace Generics
 {
+    [Serializable]
     public class BinaryTree<T> : IEnumerable<T>
     {
+        [Serializable]
         private class Node<T>
         {
             public T Value { get; set; }

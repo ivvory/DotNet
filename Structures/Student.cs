@@ -2,6 +2,7 @@
 
 namespace Structures
 {
+    [Serializable]
     public class Student : IComparable<Student>
     {
         public String FirstName { get; set; }
