@@ -35,12 +35,9 @@ namespace LINQWrapper
             var mark = Int32.Parse(Console.ReadLine());
 
             var f = new Func<Student, bool>(ss => ss.Mark > mark);
-            var students = 
-                from s in tree 
-                where f(s)
-                select s;
+            var service = new FilterService<Student>(tree);
 
-            foreach (var v in students.Take(3))
+            foreach (var v in service.Where(f).Take(3))
             {
                 Console.WriteLine(v);
             }
